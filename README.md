@@ -9,7 +9,7 @@ Este projeto possui a aplicação node.js e as configurações que utilizam as b
 
 Para um guia de instalação do Windshaft, acesse [Configurando o Windshaft] (https://github.com/sibbr/tile-server/wiki/Configurando-o-Windshaft)
 
-* redis
+* [Redis](http://redis.io/)
 
 O Windshaft usa o Redis para manter o tiles renderizando.
 
@@ -17,13 +17,13 @@ O Windshaft usa o Redis para manter o tiles renderizando.
 sudo apt-get install redis-server
 ```
 
-* Node.js 
+* [Node.js](http://nodejs.org)
 
-Para um guia completo de instalação do Node.js, acesse  (http://nodejs.org)
+Para instalar, acesse [http://nodejs.org/download](http://nodejs.org/download)
 
-* Node.js Package Manager (NPM)
+* [Node.js Package Manager (NPM)](https://www.npmjs.org)
 
-O NPM é utilizado para baixar e instalar as aplicações e dependências do tiponode.js.
+O NPM é utilizado para baixar e instalar as aplicações e dependências do tipo Node.js.
 
 ```bash
 sudo apt-get install npm
