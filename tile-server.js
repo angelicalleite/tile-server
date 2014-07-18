@@ -1,9 +1,9 @@
-// Pass the path to the installed Windshaft library's directory:
-var Windshaft = require('/opt/canadensys/Windshaft/lib/windshaft');
-var _ = require('/opt/canadensys/Windshaft/node_modules/underscore')._;
-var fs = require('fs');
-// Set file with some external configurations:
+// Set file with some external configurations: 
 var userConfig = require('./config.json');
+
+var Windshaft = require(userConfig.windshaft.libpath);
+var _ = require(userConfig.windshaft.underscorepath)._;
+var fs = require('fs');
 
 // Set style sheet file:
 var cartoCss = fs.readFileSync(__dirname + '/carto.css','utf-8');
@@ -31,18 +31,30 @@ var config = {
 		datasource: {
 			user:userConfig.database.user,
 			password:userConfig.database.password, 
-			host:'localhost', 
-			port: 5432},
-                styles: {point: cartoCss}, 
-		mapnik_version:'2.1.0'},
+			host:userConfig.database.host, 
+			port:userConfig.database.port
+		},
+                styles: {
+			point: cartoCss
+		}, 
+		mapnik_version:userConfig.mapnik.version
+	},
  	//see grainstore npm for other options
-        redis: {host: 'localhost', port: 6379},
-        mapnik: {metatile: 4, bufferSize:64},
-       	renderCache: {ttl: 60000} // Segundos
+        redis: {
+		host: userConfig.redis.host,
+		port: userConfig.redis.port
+	},
+        mapnik: {
+		metatile: userConfig.mapnik.metatile,
+		bufferSize: userConfig.mapnik.bufferSize
+	},
+       	renderCache: {
+		ttl: 60000
+	} // Segundos
     };
 
 // Start tile server on port 8088
 var ws = new Windshaft.Server(config);
-ws.listen(8088);
-console.log("map tiles are now being served out of: http://localhost:8088" + config.base_url + '/:z/:x/:y.*');
+ws.listen(userConfig.windshaft.port);
+console.log("Map tiles are now being served out of:" + userConfig.windshaft.host + ":" + userConfig.windshaft.port + "/" + config.base_url + '/:z/:x/:y.*');
 
