@@ -5,7 +5,7 @@ Este projeto possui a aplicação node.js e as configurações que utilizam as b
 
 ## Dependências
 
-* * [Windshaft](https://github.com/CartoDB/Windshaft)
+* [Windshaft](https://github.com/CartoDB/Windshaft)
 
 Para um guia de instalação do Windshaft, acesse [Configurando o Windshaft] (https://github.com/sibbr/tile-server/wiki/Configurando-o-Windshaft)
 
