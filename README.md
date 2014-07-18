@@ -3,11 +3,9 @@ tile-server
 
 Este projeto possui a aplicação node.js e as configurações que utilizam as bibliotecas Windshaft/Mapnik para renderizar os pontos no mapa do explorador visual de dados geográficos utilizado pelo  [portal-biodiversidade](https://github.com/sibbr/portal-biodiversidade).
 
+Para executar o tile-server, será necessário configurar e instalar as seguintes dependências:
+
 ## Dependências
-
-* [Windshaft](https://github.com/CartoDB/Windshaft)
-
-Para um guia de instalação do Windshaft, acesse a página [configurando o Windshaft] (https://github.com/sibbr/tile-server/wiki/Configurando-o-Windshaft)
 
 * [Redis](http://redis.io/)
 
@@ -30,6 +28,10 @@ sudo apt-get install npm
 ```
 
 Para um guia completo de instalação do NPM, acesse (https://www.npmjs.org)
+
+* [Windshaft](https://github.com/CartoDB/Windshaft)
+
+Para um guia de instalação do Windshaft, acesse a página [configurando o Windshaft] (https://github.com/sibbr/tile-server/wiki/Configurando-o-Windshaft)
 
 ## Configurando o tile-server 
 
