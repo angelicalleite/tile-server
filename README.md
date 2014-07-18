@@ -11,18 +11,16 @@ Para um guia de instalação do Windshaft, acesse [Configurando o Windshaft] (ht
 
 * redis
 
-´´´bash
-sudo aptitude install redis-server
+$ sudo aptitude install redis-server
 
 ## Configurando o tile-server 
 
 * config.json - Configurar de acordo com seus parâmetros de acesso à base de dados, servidor redis, versão mapnik, etc.
-* tile-server.js - Configurar diretório das bibliotecas Windshaft,
+* carto.css - Configurar de acordo com a aparência desejada para a exibição dos pontos no mapa
 
 ## Inicializando o tile-server
 
 Para iniciar o tile-server, basta executar na linha de comando:
 
-´´´bash
-node tile-server.js
-´´´
+$ node tile-server.js
+
