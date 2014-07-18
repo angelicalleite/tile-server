@@ -17,8 +17,6 @@ O Windshaft usa o Redis para manter o tiles renderizando.
 sudo apt-get install redis-server
 ```
 
-Para um guia de instalação do Windshaft, acesse [Configurando o Redis] (https://github.com/sibbr/tile-server/wiki/Configurando-o-Redis)
-
 * Node.js 
 
 Para um guia completo de instalação do Node.js, acesse  (http://nodejs.org)
