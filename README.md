@@ -11,7 +11,27 @@ Para um guia de instalação do Windshaft, acesse [Configurando o Windshaft] (ht
 
 * redis
 
-$ sudo aptitude install redis-server
+O Windshaft usa o Redis para manter o tiles renderizando.
+
+```bash
+sudo apt-get install redis-server
+```
+
+Para um guia de instalação do Windshaft, acesse [Configurando o Redis] (https://github.com/sibbr/tile-server/wiki/Configurando-o-Redis)
+
+* Node.js 
+
+Para um guia completo de instalação do Node.js, acesse  (http://nodejs.org)
+
+* Node.js Package Manager (NPM)
+
+O NPM é utilizado para baixar e instalar as aplicações e dependências do tiponode.js.
+
+```bash
+sudo apt-get install npm
+```
+
+Para um guia completo de instalação do NPM, acesse (https://www.npmjs.org)
 
 ## Configurando o tile-server 
 
