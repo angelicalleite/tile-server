@@ -7,7 +7,7 @@ Este projeto possui a aplicação node.js e as configurações que utilizam as b
 
 * [Windshaft](https://github.com/CartoDB/Windshaft)
 
-Para um guia de instalação do Windshaft, acesse [Configurando o Windshaft] (https://github.com/sibbr/tile-server/wiki/Configurando-o-Windshaft)
+Para um guia de instalação do Windshaft, acesse a página [configurando o Windshaft] (https://github.com/sibbr/tile-server/wiki/Configurando-o-Windshaft)
 
 * [Redis](http://redis.io/)
 
