@@ -7,7 +7,7 @@
         },
 	"mapnik" :{
 		"version": "2.1.0",
-		"metatile": 4,
+		"metatile": 1,
 		"bufferSize": 64
 	},
 	"redis": {
